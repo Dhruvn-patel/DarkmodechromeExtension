@@ -1,0 +1,30 @@
+{
+    "name":"DarkLighter",
+    "version":"1.0",
+    "manifest_version":3 ,
+    "description":"Wrap Chrome in a stylish dark mode that protects your eyes from bright colors. Social media, popular sites and all the other new tabs are all dressed in black",
+    "background":{
+        "navigator.serviceWorker.register":"indexpopup.js"
+    },
+    "action":{
+        "default_title": "DarkLighter",
+        "default_popup": "popup.html"
+    },
+    "icons":{
+        "16":"/img/picker_16.png",
+        "24":"/img/picker_24.png",
+        "32":"/img/picker_32.png",
+        "64":"/img/picker_64.png"
+    },
+    "host_permissions":[
+        "https://*/*",
+        "http://*/*"
+       
+    ],
+    "permissions": [
+        "tabs",
+        "bookmarks",
+        "scripting",
+        "activeTab"
+      ]
+}
